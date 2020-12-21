@@ -93,6 +93,7 @@ if (count($fiches) > 0) :
 .pbgallery {margin:0;padding:0;}
 #gallery<?php echo $GLOBALS['nbgalleries']; ?> li {margin: <?php echo $thumbmargin; ?>px}
 </style>
+<?php echo $pager_links;?>
 <?php
 $GLOBALS['wiki']->AddJavascriptFile('tools/bazar/presentation/javascripts/jquery.photobox.js');
 $GLOBALS['wiki']->AddJavascript('
@@ -101,4 +102,4 @@ $(document).ready(function () {
 });
 ');
 endif; ?>
-<?php echo $pager_links;?>
+
