@@ -89,7 +89,7 @@ if (!function_exists('date_periode')) {
    $nbcol = $GLOBALS['wiki']->GetParameter('nbcol');
    $width = empty($nbcol) ? 25 : 100 / $nbcol;
 ?>
-
+<?php echo $pager_links;?>
 <?php endif; ?>
 
 <style>
@@ -101,4 +101,3 @@ if (!function_exists('date_periode')) {
   @media (max-width: 700px) { .agenda-entry-container { width: 50%; } }
 
 </style>
-<?php echo $pager_links;?>
